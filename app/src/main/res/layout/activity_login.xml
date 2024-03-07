@@ -61,7 +61,8 @@
         android:id="@+id/btn_next"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="16dp"
         android:background="@drawable/btn_arraw1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/password_input" />
@@ -75,11 +76,12 @@
         android:text="Facebook"
         android:textColor="@color/blue"
         app:backgroundTint="@android:color/transparent"
-        app:strokeWidth="2dp"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@id/btn_google"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_next"
-        app:layout_constraintBottom_toBottomOf="parent">
+        app:layout_constraintVertical_bias="0.2"
+        app:strokeWidth="2dp">
 
     </com.google.android.material.button.MaterialButton>
 
@@ -88,7 +90,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="32dp"
-        android:drawableRight="@drawable/facebook"
+        android:drawableRight="@drawable/google"
         android:text="Google"
         android:textColor="@color/blue"
         app:backgroundTint="@android:color/transparent"
@@ -96,7 +98,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/btn_facebook"
         app:layout_constraintTop_toBottomOf="@+id/btn_next"
-        app:layout_constraintVertical_bias="0.495"
+        app:layout_constraintVertical_bias="0.2"
         app:strokeWidth="2dp">
 
     </com.google.android.material.button.MaterialButton>
@@ -109,7 +111,8 @@
         android:layout_margin="12dp"
         android:textColor="@color/blue"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"/>
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_facebook" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
